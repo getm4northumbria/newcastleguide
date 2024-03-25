@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #26A69A;
+    --secondary-bg-color: #FAFAFA;
+    --accent-color: #EF5350; /* Adjusted for better contrast */
+    --text-color: #263238;
+    --highlight-color: #81D4FA; /* Lighter for better visibility */
+    --font-family: 'Poppins', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--secondary-bg-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.site-header, .site-footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-bg-color);
+    padding: 25px 0; /* Increased padding */
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.site-navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Creates space between menu items */
+}
+
+.site-navigation a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for modern look */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.site-navigation a:hover {
+    background-color: #555; /* Slightly darker background on hover */
+}
+
+.category-section {
+    margin: 50px 0; /* Increased margin */
+}
+
+.category-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px; /* Increased margin */
+    font-size: 2rem; 
+}
+
+.attraction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* Adjusted for consistency */
+    overflow: visible;
+    padding-bottom: 50px;
+}
+
+.attraction img {
+    width: 100%;
+    height: 400px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure images cover the area nicely */
+    border-radius: 8px;
+    transition: transform var(--transition-speed);
+    
+}
+
+.attraction img:hover {
+    transform: scale(1.01); /* Scale up the image */
+}
+
+.attraction h3, .attraction p {
+    margin: 10px 0;
+}
+
+.attraction a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    background-color: var(--accent-color);
+    color: var(--secondary-bg-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color var(--transition-speed);
+    text-decoration: none;
+    margin-top: 15px; /* Increased spacing */
+}
+
+.attraction a:hover, .attraction a:focus {
+    background-color: var(--primary-color);
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .site-navigation ul {
+        flex-direction: column; /* Stack menu items vertically on small screens */
+        gap: 10px;
+    }
+
+    .site-header h1 {
+        font-size: 1.8rem; /* Smaller font size for small screens */
+    }
+}
+
+
+
+

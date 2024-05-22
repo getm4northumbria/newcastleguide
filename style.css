@@ -55,8 +55,9 @@ body {
     content: "|";
     color: #fff;
     padding-left: 10px;
+    padding-right: 10px;
     position: absolute;
-    right: -15px;
+    right: -20px; /* Adjusted for even spacing */
     top: 50%;
     transform: translateY(-50%);
 }
@@ -64,7 +65,7 @@ body {
 .site-navigation a {
     text-decoration: none; /* Remove underline */
     color: #ffffff; /* Set text color */
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-radius: 5px; /* Rounded corners for modern look */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
@@ -169,6 +170,3 @@ body {
 .back-to-top:hover {
     background-color: var(--accent-color); /* Change color on hover */
 }
-
-
-

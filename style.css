@@ -157,7 +157,7 @@ body {
     bottom: 30px; /* Place at the bottom */
     right: 30px; /* Place at the right */
     z-index: 1000; /* Ensure it is on top */
-    background-color: var(--primary-color); /* Primary color */
+    background-color: var(--highlight-color); /* Primary color */
     color: white; /* White text */
     border: none; /* No border */
     padding: 15px; /* Some padding */

@@ -44,17 +44,22 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Creates space between menu items */
+    gap: 20px; /* Space between items */
 }
 
-.site-navigation a {
-    text-decoration: none;
+.site-navigation li {
+    position: relative; /* For the divider */
+}
+
+.site-navigation li:not(:last-child)::after {
+    content: "|";
     color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px; /* Rounded corners for modern look */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    padding-left: 20px;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
 .site-navigation a:hover {
     background-color: #555; /* Slightly darker background on hover */
 }

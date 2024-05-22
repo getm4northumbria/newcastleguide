@@ -44,7 +44,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between items */
+    gap: 10px; /* Space between items */
 }
 
 .site-navigation li {
@@ -54,14 +54,31 @@ body {
 .site-navigation li:not(:last-child)::after {
     content: "|";
     color: #fff;
-    padding-left: 20px;
+    padding-left: 10px;
     position: absolute;
     right: -15px;
     top: 50%;
     transform: translateY(-50%);
 }
+
+.site-navigation a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Set text color */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for modern look */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
 .site-navigation a:hover {
     background-color: #555; /* Slightly darker background on hover */
+}
+
+.site-navigation a:visited {
+    color: #fff; /* Ensure visited links maintain the same color */
+}
+
+.site-navigation a:active {
+    color: #fff; /* Ensure active links maintain the same color */
 }
 
 .category-section {
@@ -134,6 +151,24 @@ body {
     }
 }
 
+.back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 30px; /* Place at the bottom */
+    right: 30px; /* Place at the right */
+    z-index: 1000; /* Ensure it is on top */
+    background-color: var(--primary-color); /* Primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 15px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Increase font size */
+}
+
+.back-to-top:hover {
+    background-color: var(--accent-color); /* Change color on hover */
+}
 
 
 

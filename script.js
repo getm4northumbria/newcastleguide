@@ -15,3 +15,23 @@ document.querySelector('.back-to-top').addEventListener('click', function(e) {
         behavior: 'smooth'
     });
 });
+
+// Show the button when the user scrolls down 20px from the top
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var backToTopBtn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+document.getElementById("backToTopBtn").addEventListener('click', function(e) {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

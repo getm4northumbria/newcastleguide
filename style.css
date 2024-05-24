@@ -181,3 +181,7 @@ body {
 .back-to-top:hover {
     background-color: var(--accent-color); /* Change color on hover */
 }
+
+html {
+    scroll-padding-top: 160px; /* Adjust this value to the height of your header */
+}

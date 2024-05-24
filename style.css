@@ -95,7 +95,7 @@ body {
 }
 
 .category-section {
-    margin: 50px 0; /* Increased margin */
+    margin: 70px 0; /* Increased margin */
 }
 
 .category-section h2 {
@@ -183,5 +183,5 @@ body {
 }
 
 html {
-    scroll-padding-top: 170px; /* Adjust this value to the height of your header */
+    scroll-padding-top: 160px; /* Adjust this value to the height of your header */
 }
